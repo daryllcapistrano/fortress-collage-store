@@ -23,7 +23,8 @@
     transform: skew(-15deg, -5deg) rotate(20deg);
   }
 
-  &:before, &:after {
+  &:before,
+  &:after {
     content: "";
     position: absolute;
     background: black;
@@ -73,34 +74,35 @@
   position: relative;
   font-weight: bold;
 
-  &:hover {
-    text-decoration: underline;
+  // &:hover {
+  //   text-decoration: underline;
 
-    &:before {
-      content: "Yes now";
-      position: absolute;
-      top: -10px;
-      left: 60%;
-      white-space: nowrap;
-      font-family: "times new roman", times, serif;
-      font-weight: normal;
-      font-style: italic;
-      mix-blend-mode: difference;
-      text-transform: lowercase;
-      text-decoration: overline;
-      color: #00efff;
-      font-size: 2em;
-      animation: blink 6s steps(4, end) infinite alternate-reverse;
-    }
-  }
+  //   &:before {
+  //     content: "Yes now";
+  //     position: absolute;
+  //     top: -10px;
+  //     left: 60%;
+  //     white-space: nowrap;
+  //     font-family: "times new roman", times, serif;
+  //     font-weight: normal;
+  //     font-style: italic;
+  //     mix-blend-mode: difference;
+  //     text-transform: lowercase;
+  //     text-decoration: overline;
+  //     color: #00efff;
+  //     font-size: 2em;
+  //     animation: blink 6s steps(4, end) infinite alternate-reverse;
+  //   }
+  // }
 }
 
 @keyframes cross-1 {
   $steps: 5;
 
   @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))}{
-      transform: translate((random(50) - 25) + px, (random(50) - 25) + px) rotate((30 - random(60)) + deg);
+    #{percentage($i * (1 / $steps))} {
+      transform: translate((random(50) - 25) + px, (random(50) - 25) + px)
+        rotate((30 - random(60)) + deg);
       width: (1 + random(3)) + px;
     }
   }
@@ -110,23 +112,24 @@
   $steps: 5;
 
   @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))}{
-      transform: translate((random(50) - 25) + px, (random(50) - 25) + px) rotate((30 - random(60)) + deg);
+    #{percentage($i * (1 / $steps))} {
+      transform: translate((random(50) - 25) + px, (random(50) - 25) + px)
+        rotate((30 - random(60)) + deg);
       height: (1 + random(2)) + px;
     }
   }
 }
 
-@keyframes blink {
-  $steps: 20;
+// @keyframes blink {
+//   $steps: 20;
 
-  @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps) + ((15 - random(30)) / 15) * (1 / $steps))} {
-      @if ($i % 3 == 0) {
-        opacity: 1;
-      } @else {
-        opacity: 0;
-      }
-    }
-  }
-}
+//   @for $i from 0 through $steps {
+//     #{percentage($i * (1 / $steps) + ((15 - random(30)) / 15) * (1 / $steps))} {
+//       @if ($i % 3 == 0) {
+//         opacity: 1;
+//       } @else {
+//         opacity: 0;
+//       }
+//     }
+//   }
+// }
