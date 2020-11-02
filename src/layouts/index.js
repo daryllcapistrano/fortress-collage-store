@@ -5,6 +5,10 @@ import Link from "gatsby-link";
 
 import "../style/index.scss";
 
+import Instagram from "../assets/instagram.svg";
+import Mail from "../assets/mail.svg";
+import Cart from "../assets/cart.svg";
+
 const Layout = ({ children, site }) => (
   <div>
     <Helmet title="Fortress Skate Company" />
@@ -25,7 +29,8 @@ const Layout = ({ children, site }) => (
             </div> */}
             <div className="Header__summary snipcart-checkout snipcart-summary">
               <a href="/" className="Header__summary__cart">
-                CART &#40;<span className="snipcart-total-items"></span>&#41;
+                <Cart /> &#40;<span className="snipcart-total-items"></span>
+                &#41;
               </a>
             </div>
           </div>
@@ -39,9 +44,11 @@ const Layout = ({ children, site }) => (
             target="_blank"
             rel="noreferrer"
           >
-            Instagram
+            <Instagram />
           </a>{" "}
-          and <a href="mailto:null">Contact</a>
+          <a href="mailto:null">
+            <Mail />
+          </a>
           {/* This website is just an example project to demonstrate how you can
           integrate <a href="https://www.gatsbyjs.org/">Gatsby</a>,{" "}
           <a href="https://snipcart.com/">Snipcart</a> and{" "}

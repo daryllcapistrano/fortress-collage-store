@@ -14,6 +14,7 @@ export default () => (
               name
               price
               quantity
+              productmetadata
               image {
                 url
                 sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
@@ -42,6 +43,9 @@ export default () => (
                 <div className="Product__details">
                   <div className="Product__name">
                     {product.name}
+                    <div className="Product__type">
+                      {product.productmetadata.type}
+                    </div>
                     <div className="Product__price">${product.price}</div>
                   </div>
                   {product.quantity === 0 ? (
