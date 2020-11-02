@@ -8,16 +8,22 @@
   }
 
   .snip-header {
-    background: #663399;
+    background: lightgrey;
   }
 
   .snip-layout__main-container {
-    border: 2px solid black;
+    // border: 2px solid black;
     padding: 3px;
+  }
+
+  .snip-quantity-trigger__btn--minus {
+    &:before {
+      line-height: 17px;
+    }
   }
 
   .snip-header__total {
     border-radius: 0;
+    background: lightgrey;
   }
 }
-

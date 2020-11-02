@@ -3,15 +3,18 @@
   max-width: 400px;
   font-family: "times new roman", times, serif;
   // font-style: italic;
-  font-size: 0.3em;
+  font-size: 0.8em;
   text-align: center;
   // border: 3px solid black;
   background-color: white;
   padding: 20px 30px;
 
+  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+    font-size: 0.3em;
+  }
   a {
     font-weight: bold;
-    text-decoration: underline;
-    color: blue;
+    text-decoration: none;
+    color: black;
   }
 }

@@ -1,56 +1,63 @@
 .Product {
   text-decoration: none;
   color: black;
-  cursor: pointer;
+  // cursor: pointer;
 }
 
 .Product__image {
-  border: 3px solid black;
-  padding: 7px;
+  // border: 3px solid black;
+  // padding: 7px;
   width: 100%;
   position: relative;
   margin-bottom: 25px;
-  box-shadow: 9px 9px black;
+  cursor: pointer;
+  // box-shadow: 9px 9px black;
 
+  &:hover {
+    opacity: 0.5;
+  }
   img {
     width: 100%;
     display: block;
   }
 }
 
-.Product:hover .Product__image {
-  img {
-    transform: skew(-15deg, -5deg) rotate(20deg);
-  }
+// .Product:hover .Product__image {
+//   opacity: 0.5;
 
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    background: black;
-    z-index: 2;
-  }
+// img {
+//   transform: skew(-15deg, -5deg) rotate(20deg);
+// }
 
-  &:before {
-    left: 50%;
-    margin-left: 1px;
-    top: 8px;
-    bottom: 7px;
-    animation: cross-1 6s steps(4, end) infinite alternate-reverse;
-  }
+// &:before,
+// &:after {
+//   content: "";
+//   position: absolute;
+//   background: black;
+//   z-index: 2;
+// }
 
-  &:after {
-    top: 50%;
-    margin-top: 1px;
-    left: 7px;
-    right: 7px;
-    animation: cross-2 9s steps(6, end) infinite alternate-reverse;
-  }
-}
+// &:before {
+//   left: 50%;
+//   margin-left: 1px;
+//   top: 8px;
+//   bottom: 7px;
+//   animation: cross-1 6s steps(4, end) infinite alternate-reverse;
+// }
+
+// &:after {
+//   top: 50%;
+//   margin-top: 1px;
+//   left: 7px;
+//   right: 7px;
+//   animation: cross-2 9s steps(6, end) infinite alternate-reverse;
+// }
+// }
 
 .Product__details {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .Product__name {
@@ -65,18 +72,21 @@
 }
 
 .Product__buy {
-  flex: 1;
-  text-align: right;
+  flex: 0;
+  // text-align: right;
+  margin-bottom: auto;
   text-transform: uppercase;
-  background: #663399;
+  min-inline-size: max-content;
+  background: lightgrey;
   padding: 10px 20px;
-  color: white;
+  color: black;
   position: relative;
   font-weight: bold;
+  cursor: pointer;
 
-  // &:hover {
-  //   text-decoration: underline;
-
+  &:hover {
+    opacity: 0.8;
+  }
   //   &:before {
   //     content: "Yes now";
   //     position: absolute;
@@ -96,29 +106,45 @@
   // }
 }
 
-@keyframes cross-1 {
-  $steps: 5;
+.Product__out {
+  text-align: right;
+  text-transform: uppercase;
+  background: white;
+  padding: 10px 20px;
+  color: lightgrey;
+  position: relative;
+  font-weight: bold;
+  font-size: 0.33em;
+  cursor: default;
 
-  @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))} {
-      transform: translate((random(50) - 25) + px, (random(50) - 25) + px)
-        rotate((30 - random(60)) + deg);
-      width: (1 + random(3)) + px;
-    }
+  &:hover {
+    text-decoration: none;
   }
 }
 
-@keyframes cross-2 {
-  $steps: 5;
+// @keyframes cross-1 {
+//   $steps: 5;
 
-  @for $i from 0 through $steps {
-    #{percentage($i * (1 / $steps))} {
-      transform: translate((random(50) - 25) + px, (random(50) - 25) + px)
-        rotate((30 - random(60)) + deg);
-      height: (1 + random(2)) + px;
-    }
-  }
-}
+//   @for $i from 0 through $steps {
+//     #{percentage($i * (1 / $steps))} {
+//       transform: translate((random(50) - 25) + px, (random(50) - 25) + px)
+//         rotate((30 - random(60)) + deg);
+//       width: (1 + random(3)) + px;
+//     }
+//   }
+// }
+
+// @keyframes cross-2 {
+//   $steps: 5;
+
+//   @for $i from 0 through $steps {
+//     #{percentage($i * (1 / $steps))} {
+//       transform: translate((random(50) - 25) + px, (random(50) - 25) + px)
+//         rotate((30 - random(60)) + deg);
+//       height: (1 + random(2)) + px;
+//     }
+//   }
+// }
 
 // @keyframes blink {
 //   $steps: 20;

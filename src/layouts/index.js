@@ -24,7 +24,7 @@ const Layout = ({ children, site }) => (
               Total price: <span className="snipcart-total-price"></span>
             </div> */}
             <div className="Header__summary snipcart-checkout snipcart-summary">
-              <a href="#/" className="Header__summary__cart">
+              <a href="/" className="Header__summary__cart">
                 CART &#40;<span className="snipcart-total-items"></span>&#41;
               </a>
             </div>
@@ -34,8 +34,12 @@ const Layout = ({ children, site }) => (
       <div className="Wrap">{children}</div>
       <div className="Wrap">
         <div className="Footer">
-          <a href="https://instagram.com/fortress_collage/" target="_blank">
-            instagram
+          <a
+            href="https://instagram.com/fortress_collage/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Instagram
           </a>{" "}
           and <a href="mailto:null">Contact</a>
           {/* This website is just an example project to demonstrate how you can
