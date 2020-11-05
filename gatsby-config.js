@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-datocms`,
       options: { apiToken: process.env.DATO_API_TOKEN },
@@ -26,6 +27,25 @@ module.exports = {
         rule: {
           include: /assets/,
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        // Available options and their defaults:
+        base64Width: 20,
+        forceBase64Format: ``, // valid formats: png,jpg,webp
+        useMozJpeg: process.env.GATSBY_JPEG_ENCODER === `MOZJPEG`,
+        stripMetadata: true,
+        defaultQuality: 50,
+        failOnError: true,
       },
     },
   ],
