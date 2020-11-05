@@ -4,8 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
-
 const path = require("path");
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -18,23 +16,33 @@ exports.createPages = async ({ graphql, actions }) => {
         edges {
           node {
             id
-            name
-            price
-            quantity
-            productmetadata
           }
         }
       }
     }
   `);
 
-  let product = allProducts.data.allDatoCmsProduct.edges;
-
-  product.forEach((edge) => {
+  allProducts.data.allDatoCmsProduct.edges.forEach((edge) => {
     createPage({
-      path: `/${edge.node.id}`,
+      // Path for this page — required
+      path: `${edge.node.id}`,
       component: productTemplate,
-      context: { id: edge.node.uid, name: edge.node.name }, // This is to pass data as props to your component.
+      context: {
+        // Add optional context data to be inserted
+        // as props into the page component..
+        //
+        // The context data can also be used as
+        // arguments to the page GraphQL query.
+        //
+        // The page "path" is always available as a GraphQL
+        // argument.
+        id: edge.node.uid,
+        name: edge.node.name,
+        price: edge.node.price,
+        quantity: edge.node.quantity,
+        image: edge.node.image,
+        productmetadata: edge.node.productmetadata,
+      },
     });
   });
 };

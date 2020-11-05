@@ -1,8 +1,8 @@
 {
-  "name": "datocms-snipcart-gatsby-example",
-  "description": "An example project to demonstrate how you can integrate Gatsby, Snipcart and DatoCMS",
+  "name": "fortress-collage-ecommerce",
+  "description": "Fortress Collage eCommerce store using Gatsby, Snipcart and DatoCMS",
   "version": "1.0.0",
-  "author": "Stefano Verna <s.verna@datocms.com>",
+  "author": "Daryll Capistrano <dcapistrano.dev@gmail.com>",
   "dependencies": {
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.85",
