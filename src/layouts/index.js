@@ -9,6 +9,8 @@ import Instagram from "../assets/instagram.svg";
 import Mail from "../assets/mail.svg";
 import Cart from "../assets/cart.svg";
 
+import Logo from "../components/Logo/logo";
+
 const Layout = ({ children, site }) => (
   <div>
     <Helmet title="Fortress Skate Company" />
@@ -18,7 +20,7 @@ const Layout = ({ children, site }) => (
           <div className="Header__body">
             <h1 className="Header__title">
               <Link data-text={site.siteMetadata.siteName} to="/">
-                {site.siteMetadata.siteName}
+                <Logo />
               </Link>
             </h1>
             {/* <div className="Header__summary__line snipcart-summary">
