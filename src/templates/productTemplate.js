@@ -21,10 +21,13 @@ export default (props) => (
         <h1>{props.pageContext.quantity}</h1>
         <h1>{props.pageContext.id}</h1>
         <h1>{props.pageContext.productmetadata.type}</h1>
-        <h1>{props.pageContext.productmetadata.sizes.small}</h1>
+
+        {/* below does NOT work with board sizes and throws type error */}
+
+        {/* <h1>{props.pageContext.productmetadata.sizes.small}</h1>
         <h1>{props.pageContext.productmetadata.sizes.medium}</h1>
         <h1>{props.pageContext.productmetadata.sizes.large}</h1>
-        <h1>{props.pageContext.productmetadata.sizes.xl}</h1>
+        <h1>{props.pageContext.productmetadata.sizes.xl}</h1> */}
 
         {/* fix below to correctly use image */}
 
@@ -33,6 +36,8 @@ export default (props) => (
           alt="Product"
           style={{ height: `300px`, width: `300px` }}
         /> */}
+
+        {/* add working cart button */}
 
         {/* <span
           className="Product__buy snipcart-add-item"

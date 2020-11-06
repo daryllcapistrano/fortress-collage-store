@@ -32,6 +32,11 @@ exports.createPages = async ({ graphql, actions }) => {
       path: `${edge.node.id}`,
       component: productTemplate,
       context: {
+        id: edge.node.id,
+        name: edge.node.name,
+        price: edge.node.price,
+        quantity: edge.node.quantity,
+        productmetadata: edge.node.productmetadata,
         // Add optional context data to be inserted
         // as props into the page component..
         //
@@ -40,11 +45,6 @@ exports.createPages = async ({ graphql, actions }) => {
         //
         // The page "path" is always available as a GraphQL
         // argument.
-        id: edge.node.id,
-        name: edge.node.name,
-        price: edge.node.price,
-        quantity: edge.node.quantity,
-        productmetadata: edge.node.productmetadata,
       },
     });
   });
