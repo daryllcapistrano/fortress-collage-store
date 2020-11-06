@@ -20,14 +20,6 @@ exports.createPages = async ({ graphql, actions }) => {
             price
             productmetadata
             quantity
-            image {
-              fluid {
-                base64
-                tracedSVG
-                width
-                height
-              }
-            }
           }
         }
       }
@@ -48,10 +40,9 @@ exports.createPages = async ({ graphql, actions }) => {
         //
         // The page "path" is always available as a GraphQL
         // argument.
-        id: edge.node.uid,
+        id: edge.node.id,
         name: edge.node.name,
         price: edge.node.price,
-        image: edge.node.image,
         quantity: edge.node.quantity,
         productmetadata: edge.node.productmetadata,
       },

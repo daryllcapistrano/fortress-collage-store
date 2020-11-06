@@ -65,7 +65,7 @@ const Layout = ({ children, site }) => (
 );
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.node.isRequired,
 };
 
 export default Layout;

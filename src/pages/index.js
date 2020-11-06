@@ -41,7 +41,7 @@ export default () => (
                   <Link to={`${product.id}`}>
                     <Img sizes={product.image.sizes} />
                   </Link>
-                </div>{" "}
+                </div>
                 <div className="Product__details">
                   <div className="Product__name">
                     {product.name}
