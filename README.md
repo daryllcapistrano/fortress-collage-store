@@ -1,49 +1,177 @@
-# Snipcart + Gatsby + DatoCMS example
+<!--
+*** Thanks for checking out this README Template. If you have a suggestion that would
+*** make this better, please fork the repo and create a pull request or simply open
+*** an issue with the tag "enhancement".
+*** Thanks again! Now go create something AMAZING! :D
+***
+***
+***
+*** To avoid retyping too much info. Do a search and replace for the following:
+*** github_username, repo_name, twitter_handle, email
+-->
 
-This is a demo project to get you started with a static ecommerce site powered by [Gatsby](https://www.gatsbyjs.org/), [Snipcart](https://snipcart.com/) and [DatoCMS](https://www.datocms.com/).
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-It's a brutalist socks ecommerce site, that looks like this:
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-![Socks ecommerce screenshot](./preview.png)
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/daryllcapistrano/repo_name">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-You can see how it looks live on this [demo installation](https://datocms-snipcart-gatsby-demo.netlify.com/).
+  <h3 align="center">YOUR_TITLE</h3>
 
-All the details on how this works on the [related blog post](https://www.datocms.com/blog/static-ecommerce-website-snipcart-gatsbyjs-datocms).
+  <p align="center">
+    YOUR_SHORT_DESCRIPTION
+    <br />
+    <a href="https://github.com/daryllcapistrano/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/daryllcapistrano/repo_name">View Demo</a>
+    ·
+    <a href="https://github.com/daryllcapistrano/repo_name/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/daryllcapistrano/repo_name/issues">Request Feature</a>
+  </p>
+</p>
 
-## Deploy on DatoCMS
+<!-- TABLE OF CONTENTS -->
 
-If you want to set up a live demo for yourself, just [sign up for a free DatoCMS account](https://dashboard.datocms.com/signup) and click this button:
+## Table of Contents
 
-[![Deploy with DatoCMS](https://dashboard.datocms.com/deploy/button.svg)](https://dashboard.datocms.com/deploy?repo=datocms/snipcart-gatsby-demo)
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-## Usage
+<!-- ABOUT THE PROJECT -->
 
-To run this project locally, install the dependencies of this project:
+## About The Project
 
+[![Product Name Screen Shot][product-screenshot]](https://example.com)
+
+Here's a blank template to get started:
+**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
+`daryllcapistrano`, `repo_name`, `twitter_handle`, `email`
+
+### Built With
+
+- []()
+- []()
+- []()
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+This is an example of how to list things you need to use the software and how to install them.
+
+- npm
+
+```sh
+npm install npm@latest -g
 ```
+
+### Installation
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/daryllcapistrano/repo_name.git
+```
+
+2. Install NPM packages
+
+```sh
 npm install
 ```
 
-Add an `.env` file containing the read-only API token of your DatoCMS site (set up with the demo button above):
+<!-- USAGE EXAMPLES -->
 
-```
-echo 'DATO_API_TOKEN=abc123' >> .env
-```
+## Usage
 
-Then, to run this website in development mode (with live-reload):
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-```
-npm run develop
-```
+_For more examples, please refer to the [Documentation](https://example.com)_
 
-To build the final, production ready static website:
+<!-- ROADMAP -->
 
-```
-npm run build
-```
+## Roadmap
 
-The final result will be saved in the `public` directory.
+See the [open issues](https://github.com/daryllcapistrano/repo_name/issues) for a list of proposed features (and known issues).
 
-## Further demo options
+<!-- CONTRIBUTING -->
 
-This project is also available as a demo on [Gatsby Cloud](https://www.gatsbyjs.com/). This will allow you to test the [Gatsby preview](https://www.datocms.com/blog/live-preview-changes-on-gatsby-preview) capabilities in no time.
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+
+Project Link: [https://github.com/daryllcapistrano/repo_name](https://github.com/daryllcapistrano/repo_name)
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- []()
+- []()
+- []()
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/daryllcapistrano/repo.svg?style=flat-square
+[contributors-url]: https://github.com/daryllcapistrano/repo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/daryllcapistrano/repo.svg?style=flat-square
+[forks-url]: https://github.com/daryllcapistrano/repo/network/members
+[stars-shield]: https://img.shields.io/github/stars/daryllcapistrano/repo.svg?style=flat-square
+[stars-url]: https://github.com/daryllcapistrano/repo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/daryllcapistrano/repo.svg?style=flat-square
+[issues-url]: https://github.com/daryllcapistrano/repo/issues
+[license-shield]: https://img.shields.io/github/license/daryllcapistrano/repo.svg?style=flat-square
+[license-url]: https://github.com/daryllcapistrano/repo/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/daryllcapistrano
+[product-screenshot]: images/screenshot.png
