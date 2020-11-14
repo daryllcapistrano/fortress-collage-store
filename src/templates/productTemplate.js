@@ -35,18 +35,16 @@ export default (props) => (
       }
     `}
     render={(data) => {
-      const name = data.allDatoCmsProduct.edges.find((n) => {
-        return (
-          n.node.id.includes(JSON.stringify(props.pageContext.id)),
-          console.log(n, props.pageContext.id)
-        );
-      });
-      if (!name) {
-        // return null;
-        console.log("no image returned");
-      }
-      console.log(name);
+      let products = data.allDatoCmsProduct.edges;
 
+      let singleProduct = products.filter((id) => {
+        return id.node.id === props.pageContext.id;
+      });
+      console.log(singleProduct);
+      if (!products) {
+        // return null;
+        console.log("no product found");
+      }
       return (
         <Layout site={data.site}>
           <h1>{props.pageContext.name}</h1>
@@ -56,6 +54,7 @@ export default (props) => (
           <h1>{props.pageContext.productmetadata.type}</h1>
 
           <p>render here</p>
+          <p>{singleProduct.image}</p>
 
           {/* <div style={{ maxWidth: `300px` }}>
           <Image alt="Gatsby in Space" name={props.pageContext.name} />
