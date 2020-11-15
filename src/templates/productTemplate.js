@@ -28,7 +28,7 @@ export default (props) => (
               productmetadata
               image {
                 url
-                fluid(imgixParams: { maxW: 300 }) {
+                fluid(imgixParams: { maxW: 500 }) {
                   ...GatsbyDatoCmsFluid
                 }
               }
@@ -50,18 +50,16 @@ export default (props) => (
       return (
         <Layout site={data.site}>
           <div className="Catalogue__item" key={singleProduct[0].id}>
-            <h1>{props.pageContext.name}</h1>
-            <h1>{props.pageContext.price}</h1>
-            <h1>{props.pageContext.quantity}</h1>
-            <h1>{props.pageContext.id}</h1>
-            <h1>{props.pageContext.productmetadata.type}</h1>
-
-            <Img fluid={singleProduct[0].node.image.fluid} />
-
-            <p>{singleProduct[0].node.id}</p>
-
-            {/* add working cart button */}
-
+            <Img
+              className="Product__image"
+              fluid={singleProduct[0].node.image.fluid}
+            />
+            <p className="Product__name">{props.pageContext.name}</p>
+            <p className="Product__price">{props.pageContext.price}</p>
+            <p className="Product__type">{props.pageContext.quantity}</p>
+            {/* <p>{props.pageContext.id}</p> */}
+            {/* <h1>{props.pageContext.productmetadata.type}</h1> */}
+            {/* <p>{singleProduct[0].node.id}</p> */}
             <span
               className="Product__buy snipcart-add-item"
               data-item-id={props.pageContext.id}
