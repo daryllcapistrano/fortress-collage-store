@@ -8,7 +8,7 @@ export default function Logo() {
       file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }
@@ -22,3 +22,5 @@ export default function Logo() {
     />
   );
 }
+
+// get only image with max width for header

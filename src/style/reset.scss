@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
 html,
 body,
 div,
@@ -108,6 +113,9 @@ section {
 body {
   line-height: 1.5;
   font-family: consolas, Menlo, monospace, sans-serif;
+  display: flex;
+  flex-direction: column;
+  // min-height: 100%;
 }
 
 ol,

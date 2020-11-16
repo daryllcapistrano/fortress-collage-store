@@ -12,31 +12,31 @@ import Cart from "../assets/cart.svg";
 import Logo from "../components/Logo/logo";
 
 const Layout = ({ children, site }) => (
-  <div>
+  <div style={{ flex: `1 0 auto` }}>
     <Helmet title="Fortress Skate Company" />
     <div className="Container">
-      <div className="Header">
-        <div className="Wrap">
+      <div className="Wrap">
+        <div className="Header">
           <div className="Header__body">
             <h1 className="Header__title">
               <Link data-text={site.siteMetadata.siteName} to="/">
                 <Logo />
               </Link>
             </h1>
-            {/* <div className="Header__summary__line snipcart-summary">
-              Number of items: <span className="snipcart-total-items"></span>
-            </div> */}
-            {/* <div className="Header__summary__line snipcart-summary">
-              Total price: <span className="snipcart-total-price"></span>
-            </div> */}
-            <div className="Header__summary snipcart-checkout snipcart-summary">
-              <a href="/" className="Header__summary__cart">
-                <Cart />
-                {/* make below a conditional render based on cart quantity. should show 0 when empty */}
-                &#40;<span className="snipcart-total-items"></span>
-                &#41;
-              </a>
+            <div className="Header__summary__line snipcart-summary">
+              {/* Number of items: <span className="snipcart-total-items"></span> */}
             </div>
+            <div className="Header__summary__line snipcart-summary">
+              {/* Total price: <span className="snipcart-total-price"></span> */}
+            </div>
+          </div>
+          <div className="Header__summary snipcart-checkout snipcart-summary">
+            <a href="/" className="Header__summary__cart">
+              <Cart />
+              {/* make below a conditional render based on cart quantity. should show 0 when empty */}
+              &#40;<span className="snipcart-total-items"></span>
+              &#41;
+            </a>
           </div>
         </div>
       </div>

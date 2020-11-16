@@ -1,0 +1,2 @@
+- make slugs for product url
+- add product size dropdown

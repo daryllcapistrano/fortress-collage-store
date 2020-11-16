@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 import Layout from "../layouts/index";
 import Img from "gatsby-image";
 // import Image from "../components/Images/productImage";
@@ -49,14 +49,34 @@ export default (props) => (
       }
       return (
         <Layout site={data.site}>
-          <div className="Catalogue__item" key={singleProduct[0].id}>
+          <div className="Product__detail" key={singleProduct[0].id}>
+            <Link
+              to={`/`}
+              style={{
+                display: `inline-block`,
+                textDecoration: `none`,
+                paddingBottom: `4em`,
+                fontSize: `50%`,
+              }}
+            >
+              {" "}
+              &#60; back to home
+            </Link>
             <Img
-              className="Product__image"
+              className="Product__detail__image"
               fluid={singleProduct[0].node.image.fluid}
             />
-            <p className="Product__name">{props.pageContext.name}</p>
-            <p className="Product__price">{props.pageContext.price}</p>
-            <p className="Product__type">{props.pageContext.quantity}</p>
+            <p className="Product__detail__price">${props.pageContext.price}</p>
+            <h2 className="Product__detail__name">{props.pageContext.name}</h2>
+            <p className="Product__detail__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+              ratione corporis, minus ex officiis molestias, suscipit deserunt
+              dolore maiores, culpa consequatur architecto error quo.
+              Distinctio.
+            </p>
+            {/* <p className="Product__detail__type">
+              {props.pageContext.quantity}
+            </p> */}
             {/* <p>{props.pageContext.id}</p> */}
             {/* <h1>{props.pageContext.productmetadata.type}</h1> */}
             {/* <p>{singleProduct[0].node.id}</p> */}

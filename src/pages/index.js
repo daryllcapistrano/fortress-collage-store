@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 import Layout from "../layouts/index";
 import Img from "gatsby-image";
 
@@ -38,19 +38,20 @@ export default () => (
             <div className="Catalogue__item" key={product.id}>
               <div className="Product">
                 <div className="Product__image">
-                  <Link to={`${product.id}`}>
+                  <a href={`${product.id}`}>
                     <Img sizes={product.image.sizes} />
-                  </Link>
+                  </a>
                 </div>
                 <div className="Product__details">
                   <div className="Product__name">
                     {product.name}
                     <div className="Product__type">
-                      {product.productmetadata.type}
+                      {/* {product.productmetadata.type} - */}
                     </div>
-                    <div className="Product__price">${product.price}</div>
+                    {/* <div className="Product__price">${product.price}</div> */}
                   </div>
-                  {product.quantity === 0 ? (
+
+                  {/* {product.quantity === 0 ? (
                     <span
                       className="Product__out"
                       data-item-id={product.id}
@@ -72,7 +73,7 @@ export default () => (
                     >
                       add to cart
                     </span>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
