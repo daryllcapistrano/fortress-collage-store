@@ -1,6 +1,7 @@
 .snip-layout.snip-layout {
   * {
-    font-family: consolas, Menlo, monospace, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   }
 
   .snip-product__name {
@@ -8,7 +9,7 @@
   }
 
   .snip-header {
-    background: lightgrey;
+    background: black;
   }
 
   .snip-layout__main-container {
@@ -24,6 +25,8 @@
 
   .snip-header__total {
     border-radius: 0;
-    background: lightgrey;
+  }
+  .snip-quantity-trigger__btn {
+    background-color: transparent;
   }
 }

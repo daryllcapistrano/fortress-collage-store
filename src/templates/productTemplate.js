@@ -80,6 +80,16 @@ export default (props) => (
             {/* <p>{props.pageContext.id}</p> */}
             {/* <h1>{props.pageContext.productmetadata.type}</h1> */}
             {/* <p>{singleProduct[0].node.id}</p> */}
+            <div style={{ marginBottom: `2em` }}>
+              <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option selected value="large">
+                  Large
+                </option>
+                <option value="xl">Xl</option>
+              </select>
+            </div>
             <span
               className="Product__buy snipcart-add-item"
               data-item-id={props.pageContext.id}
