@@ -1,6 +1,6 @@
 import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
-import Layout from "../layouts/index";
+import Layout from "../components/Layout/index";
 import Img from "gatsby-image";
 // import Image from "../components/Images/productImage";
 
