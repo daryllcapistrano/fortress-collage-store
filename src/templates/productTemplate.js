@@ -43,10 +43,22 @@ export default (props) => (
       let singleProduct = products.filter((id) => {
         return id.node.id === props.pageContext.id;
       });
-      console.log(singleProduct);
+      // console.log(singleProduct);
       if (!products) {
         console.log("no product found");
       }
+
+      // get select values for use in dropdown
+      const productMetaData = singleProduct[0].node.productmetadata;
+      const productSizes = Object.getOwnPropertyNames(productMetaData.size);
+      console.log(productSizes);
+
+      // const sizes = props.pageContext.productmetadata;
+
+      // returns only board widths, breaks on tshirt sizes
+      // const width = Object.getOwnPropertyNames(productMetaData.width);
+      // console.log(width);
+
       return (
         <Layout site={data.site}>
           <div className="Product__detail" key={singleProduct[0].id}>
@@ -82,12 +94,12 @@ export default (props) => (
             {/* <p>{singleProduct[0].node.id}</p> */}
             <div style={{ marginBottom: `2em` }}>
               <select>
-                <option value="small">Small</option>
-                <option value="medium">Medium</option>
-                <option selected value="large">
-                  Large
-                </option>
-                <option value="xl">Xl</option>
+                {/* <option value={productSizes[0]}>{productSizes[0]}</option>
+                <option value={productSizes[1]}>{productSizes[1]}</option> */}
+
+                {productSizes.map((size) => (
+                  <option value={size}>{size}</option>
+                ))}
               </select>
             </div>
             <span
