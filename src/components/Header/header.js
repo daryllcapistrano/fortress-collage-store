@@ -22,10 +22,10 @@ const Header = ({ site }) => (
       </div>
       <div className="Header__summary snipcart-checkout snipcart-summary">
         <a href="/" className="Header__summary__cart">
-          <Cart />
-          {/* make below a conditional render based on cart quantity. should show 0 when empty */}
-          &#40;<span className="snipcart-total-items"></span>
-          &#41;
+          <span className="Header__summary__logo">
+            <Cart />
+          </span>{" "}
+          <span className="snipcart-total-items"></span>
         </a>
       </div>
     </div>

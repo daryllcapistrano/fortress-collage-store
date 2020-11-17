@@ -92,7 +92,7 @@ export default (props) => (
             {/* <p>{props.pageContext.id}</p> */}
             {/* <h1>{props.pageContext.productmetadata.type}</h1> */}
             {/* <p>{singleProduct[0].node.id}</p> */}
-            <div style={{ marginBottom: `2em` }}>
+            <div style={{ marginBottom: `1.25em` }}>
               <select>
                 {/* <option value={productSizes[0]}>{productSizes[0]}</option>
                 <option value={productSizes[1]}>{productSizes[1]}</option> */}

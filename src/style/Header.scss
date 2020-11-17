@@ -24,7 +24,7 @@
   // font-family: "times new roman", times, serif;
   // text-align: center;
   @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-    width: 50%;
+    width: 30%;
   }
 
   // a {
@@ -85,35 +85,27 @@
 
 .Header__summary__cart {
   font-size: 0.8em;
+  font-weight: bold;
   color: black;
+  border-radius: 3px;
   text-decoration: none;
   float: right;
-  min-width: 100%;
+  margin: 0 1em 0 0;
+  padding: 0.25em 0.75em;
+  border: 1px solid black;
+
+  // min-width: 100%;
   // margin: 2em 0 0 0;
   // margin: 1em;
   // padding: 1em 0;
   @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     // float: none;
     // font-size: 0.5em;
+    margin: 0 1.5em 0 0;
   }
 }
 
-// @keyframes noise-anim {
-//   $steps: 20;
-
-//   @for $i from 0 through $steps {
-//     #{percentage($i * (1 / $steps))} {
-//       clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-//     }
-//   }
-// }
-
-// @keyframes noise-anim-2 {
-//   $steps: 20;
-
-//   @for $i from 0 through $steps {
-//     #{percentage($i * (1/$steps))} {
-//       clip: rect(random(100) + px, 9999px, random(100) + px, 0);
-//     }
-//   }
-// }
+.Header__summary__logo {
+  position: relative;
+  bottom: -2px;
+}
