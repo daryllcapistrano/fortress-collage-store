@@ -2,13 +2,16 @@
   text-decoration: none;
   color: black;
   cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .Product__image {
   width: 90%;
   position: relative;
   margin: auto;
-  margin-bottom: 0.6em;
+  // margin-bottom: 0.6em;
   cursor: pointer;
 
   &:hover {
@@ -106,13 +109,13 @@
   color: #594157;
   opacity: 0.6;
   font-weight: bold;
-  margin: 1.25em 0;
+  margin: 0.75em 0 0;
 }
 
 .Product__detail__name {
   font-weight: bold;
   font-size: 150%;
-  margin: 0.75em 0 0.25em;
+  // margin: 0 0 0.25em;
 }
 
 .Product__detail__image {
@@ -121,5 +124,5 @@
 }
 
 .Product__detail__description {
-  margin: 0 0 2.5em 0;
+  margin: 0 0 2.5em;
 }

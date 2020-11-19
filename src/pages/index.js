@@ -45,35 +45,8 @@ export default () => (
                 <div className="Product__details">
                   <div className="Product__name">
                     {product.name}
-                    <div className="Product__type">
-                      {/* {product.productmetadata.type} - */}
-                    </div>
-                    {/* <div className="Product__price">${product.price}</div> */}
+                    <div className="Product__type"></div>
                   </div>
-
-                  {/* {product.quantity === 0 ? (
-                    <span
-                      className="Product__out"
-                      data-item-id={product.id}
-                      data-item-price={product.price}
-                      data-item-image={product.image.url}
-                      data-item-name={product.name}
-                      data-item-url={`/`}
-                    >
-                      out of stock
-                    </span>
-                  ) : (
-                    <span
-                      className="Product__buy snipcart-add-item"
-                      data-item-id={product.id}
-                      data-item-price={product.price}
-                      data-item-image={product.image.url}
-                      data-item-name={product.name}
-                      data-item-url={`/`}
-                    >
-                      add to cart
-                    </span>
-                  )} */}
                 </div>
               </div>
             </div>

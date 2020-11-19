@@ -1,7 +1,8 @@
 .Wrap {
   max-width: 100%;
   margin: 0 auto;
-  padding-bottom: 3em;
-  // height: fit-content;
-  // flex: 1 0 auto;
+
+  @media screen and (min-width: 300px) {
+    padding: 0 0.5em;
+  }
 }
