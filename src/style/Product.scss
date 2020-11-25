@@ -1,4 +1,5 @@
 .Product {
+  margin: 0.25em;
   text-decoration: none;
   color: black;
   cursor: pointer;
@@ -8,7 +9,7 @@
 }
 
 .Product__image {
-  width: 90%;
+  width: 100%;
   position: relative;
   margin: auto;
   // margin-bottom: 0.6em;
@@ -23,18 +24,18 @@
   }
 }
 
-.Product__details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+// .Product__details {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+// redundant styling, already have product__details below
 
 .Product__name {
   text-align: center;
   width: 100%;
-  font-size: 1.8em;
   font-weight: bold;
-  // padding-right: 20px;
+  text-transform: uppercase;
 }
 
 .Product__price {
@@ -101,8 +102,8 @@
 
 // Product Template styles
 
-.Product__detail {
-  margin: 0 1em;
+.Product__details {
+  margin: 0 0.5em;
 }
 
 .Product__detail__price {
@@ -124,5 +125,5 @@
 }
 
 .Product__detail__description {
-  margin: 0 0 2.5em;
+  margin: 0.5em 0 2.5em;
 }

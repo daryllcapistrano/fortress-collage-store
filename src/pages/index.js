@@ -18,7 +18,7 @@ export default () => (
               image {
                 url
                 sizes(maxWidth: 300, imgixParams: { fm: "jpg" }) {
-                  ...GatsbyDatoCmsSizes
+                  ...GatsbyDatoCmsSizes_noBase64
                 }
               }
             }
@@ -42,11 +42,9 @@ export default () => (
                     <Img sizes={product.image.sizes} />
                   </a>
                 </div>
-                <div className="Product__details">
-                  <div className="Product__name">
-                    {product.name}
-                    <div className="Product__type"></div>
-                  </div>
+                <div className="Product__name">
+                  {product.name}
+                  {/* <div className="Product__type"></div> */}
                 </div>
               </div>
             </div>

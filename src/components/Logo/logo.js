@@ -8,7 +8,7 @@ export default function Logo() {
       file(relativePath: { eq: "logo.jpg" }) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+            ...GatsbyImageSharpFluid_noBase64
           }
         }
       }

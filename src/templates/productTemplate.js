@@ -4,8 +4,6 @@ import Layout from "../components/Layout/index";
 import Img from "gatsby-image";
 // import Image from "../components/Images/productImage";
 
-// try querying for all the product data and then single it down to the correct image by checking against the pageContext id before rendering on page
-
 // * now that ive got the correct data to each page, reading the docs just reminded me that i should not use static query for page layer data.id
 // * maybe swith this component to use a regualr query if the above is not applicable
 
@@ -29,7 +27,7 @@ export default (props) => (
               image {
                 url
                 fluid(imgixParams: { maxW: 500 }) {
-                  ...GatsbyDatoCmsFluid
+                  ...GatsbyDatoCmsFluid_noBase64
                 }
               }
             }
@@ -61,7 +59,7 @@ export default (props) => (
 
       return (
         <Layout site={data.site}>
-          <div className="Product__detail" key={singleProduct[0].id}>
+          <div className="Product__details" key={singleProduct[0].id}>
             <Link
               to={`/`}
               style={{
