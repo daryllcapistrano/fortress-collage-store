@@ -46,6 +46,10 @@ export default () => (
                   {product.name}
                   {/* <div className="Product__type"></div> */}
                 </div>
+                <div className="Product__price">
+                  $ {product.price}
+                  {/* <div className="Product__type"></div> */}
+                </div>
               </div>
             </div>
           ))}

@@ -15,7 +15,7 @@ import Footer from "../Footer";
 // import Logo from "../Logo/logo";
 
 const Layout = ({ children, site }) => (
-  <div style={{ flex: `1 0 auto` }}>
+  <div>
     <Helmet title="Fortress Skate Company" />
     <div className="Container">
       <Header site={site} />
