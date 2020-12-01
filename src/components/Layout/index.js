@@ -19,7 +19,7 @@ const Layout = ({ children, site }) => (
     <Helmet title="Fortress Skate Company" />
     <div className="Container">
       <Header site={site} />
-      <div className="Wrap">{children}</div>
+      {children}
       <Footer />
     </div>
   </div>
