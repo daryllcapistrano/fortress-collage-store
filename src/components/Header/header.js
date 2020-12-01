@@ -19,7 +19,7 @@ const Header = ({ site }) => (
       <button className="Header__cart snipcart-checkout snipcart-summary">
         <a href="/" className="Header__cart__link">
           <span className="Header__cart__icon">
-            <Cart />
+            <Cart />{" "}
           </span>
           <span className="snipcart-total-items"></span>
         </a>

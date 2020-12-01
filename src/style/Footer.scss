@@ -4,7 +4,7 @@
 }
 
 .Footer {
-  margin: 8em 0;
+  margin: 4em 0 1.25em;
   font-size: 0.8em;
   // padding: 0 24em;
   // text-align: center;
@@ -13,11 +13,12 @@
   bottom: 0;
   width: 100%;
   color: white;
+  background-color: lightgray;
   // flex-shrink: 0;
 
-  @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-    font-size: 0.2em;
-  }
+  // @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  //   font-size: 0.2em;
+  // }
   a {
     font-weight: bold;
     text-decoration: none;
@@ -30,4 +31,5 @@
   display: flex;
   justify-content: space-around;
   margin: 0 2em;
+  padding: 1.5em;
 }
