@@ -6,22 +6,26 @@ import Cart from "../../assets/cart.svg";
 
 const Header = ({ site }) => (
   // <div className="Wrap">
-  <div className="Header">
-    <div className="Header__body">
-      <div className="Header__title">
-        <Link data-text={site.siteMetadata.siteName} to="/">
+  <header className="Header">
+    {/* <div className="Header__body"> */}
+    <div>
+      <h1 className="Header__logo" data-text={site.siteMetadata.siteName}>
+        <Link to="/">
           <Logo />
         </Link>
-      </div>
-      <div className="Header__summary snipcart-checkout snipcart-summary">
-        <a href="/" className="Header__summary__cart">
-          <span className="Header__summary__logo">
+      </h1>
+    </div>
+    <div>
+      <button className="Header__cart snipcart-checkout snipcart-summary">
+        <a href="/" className="Header__cart__link">
+          <span className="Header__cart__icon">
             <Cart />
-          </span>{" "}
+          </span>
           <span className="snipcart-total-items"></span>
         </a>
-      </div>
+      </button>
     </div>
+    {/* </div> */}
     {/* <div className="Header__summary__line snipcart-summary">
           Number of items: <span className="snipcart-total-items"></span>
         </div>
@@ -36,7 +40,7 @@ const Header = ({ site }) => (
           <span className="snipcart-total-items"></span>
         </a>
       </div> */}
-  </div>
+  </header>
   // </div>
 );
 
