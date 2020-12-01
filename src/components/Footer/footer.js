@@ -4,7 +4,7 @@ import Instagram from "../../assets/instagram.svg";
 import Mail from "../../assets/mail.svg";
 
 const Footer = () => (
-  <div className="Wrap">
+  <div className="Footer__Wrap">
     <div className="Footer">
       <div className="Social__buttons">
         <a
