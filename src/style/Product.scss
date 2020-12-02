@@ -117,14 +117,17 @@
 .Product__detail__price {
   color: #594157;
   opacity: 0.6;
-  font-weight: bold;
-  // margin: 3.5em 0 0.25em;
+  // font-weight: bold;
+  margin: 1em 0 0.25em;
+  padding-left: 0.25em;
 }
 
 .Product__detail__name {
+  text-align: center;
+  text-transform: uppercase;
   font-weight: bold;
   font-size: 150%;
-  margin: 0.75em 0 0.25em;
+  margin: 1em 0 0.1em;
   // margin: 0 0 0.25em;
 }
 
@@ -134,5 +137,6 @@
 }
 
 .Product__detail__description {
-  margin: 0.5em 0 3em;
+  margin-bottom: 3em;
+  padding: 0.3em;
 }

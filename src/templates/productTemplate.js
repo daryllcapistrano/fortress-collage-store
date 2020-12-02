@@ -65,19 +65,19 @@ export default (props) => (
               style={{
                 display: `inline-block`,
                 textDecoration: `none`,
-                paddingBottom: `4em`,
                 fontSize: `50%`,
                 color: `black`,
+                paddingLeft: `.5em`,
               }}
             >
               {" "}
               &#60; home
             </Link>
+            <h2 className="Product__detail__name">{props.pageContext.name}</h2>
             <Img
               className="Product__detail__image"
               fluid={singleProduct[0].node.image.fluid}
             />
-            <h2 className="Product__detail__name">{props.pageContext.name}</h2>
             <p className="Product__detail__price">${props.pageContext.price}</p>
             <p className="Product__detail__description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
