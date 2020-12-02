@@ -67,17 +67,18 @@ export default (props) => (
                 textDecoration: `none`,
                 paddingBottom: `4em`,
                 fontSize: `50%`,
+                color: `black`,
               }}
             >
               {" "}
-              &#60; back to home
+              &#60; home
             </Link>
             <Img
               className="Product__detail__image"
               fluid={singleProduct[0].node.image.fluid}
             />
-            <p className="Product__detail__price">${props.pageContext.price}</p>
             <h2 className="Product__detail__name">{props.pageContext.name}</h2>
+            <p className="Product__detail__price">${props.pageContext.price}</p>
             <p className="Product__detail__description">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
               ratione corporis, minus ex officiis molestias, suscipit deserunt

@@ -35,11 +35,10 @@
 // redundant styling, already have product__details below
 
 .Product__name {
-  font-family: "Courier New", Courier, monospace;
   text-align: left;
   padding-left: 0.75em;
   width: 100%;
-  // font-weight: bold;
+  font-weight: bold;
   text-transform: uppercase;
   color: #585e71;
 }
@@ -48,8 +47,9 @@
   font-size: 0.8em;
   font-weight: normal;
   color: #000000;
-  text-align: left;
-  padding-left: 1em;
+  // text-align: left;
+  float: right;
+  padding: 0 1em;
 }
 
 .Product__type {
@@ -118,20 +118,21 @@
   color: #594157;
   opacity: 0.6;
   font-weight: bold;
-  margin: 0.75em 0 0;
+  // margin: 3.5em 0 0.25em;
 }
 
 .Product__detail__name {
   font-weight: bold;
   font-size: 150%;
+  margin: 2em 0 0.25em;
   // margin: 0 0 0.25em;
 }
 
 .Product__detail__image {
+  margin: 1em 0 0;
   width: 100%;
-  margin: auto;
 }
 
 .Product__detail__description {
-  margin: 0.5em 0 2.5em;
+  margin: 0.5em 0 4.5em;
 }
