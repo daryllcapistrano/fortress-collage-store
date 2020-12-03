@@ -3,17 +3,28 @@
   background-color: white;
   color: white;
   background-color: lightgray;
-  a {
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    height: 100%;
-  }
-}
 
-.Social__buttons {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 2em;
-  padding: 3em 1.5em;
+  .Social__buttons {
+    display: flex;
+    justify-content: center;
+    padding: 1.25em 0 0;
+
+    li {
+      margin: 0 1.5em;
+
+      a {
+        color: black;
+        font-size: 25%;
+      }
+    }
+  }
+
+  .Footer__copyright {
+    text-align: center;
+    padding: 1em;
+    p {
+      color: black;
+      font-size: 10px;
+    }
+  }
 }

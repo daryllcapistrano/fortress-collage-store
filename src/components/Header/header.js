@@ -5,7 +5,6 @@ import Logo from "../Logo/logo";
 import Cart from "../../assets/cart.svg";
 
 const Header = ({ site }) => (
-  // <div className="Wrap">
   <header className="Header">
     {/* <div className="Header__body"> */}
     <div>
@@ -28,10 +27,10 @@ const Header = ({ site }) => (
     <div>
       <button className="Header__cart snipcart-checkout snipcart-summary">
         <a href="/" className="Header__cart__link">
-          <span className="Header__cart__icon">
-            <span className="snipcart-total-items"></span>
+          <div className="Header__cart__icon">
             <Cart />
-          </span>
+          </div>
+          <div className="Header__cart__total snipcart-total-items"></div>
         </a>
       </button>
     </div>
@@ -51,7 +50,6 @@ const Header = ({ site }) => (
         </a>
       </div> */}
   </header>
-  // </div>
 );
 
 export default Header;
