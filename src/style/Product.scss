@@ -113,8 +113,32 @@
 
 // Product Template styles
 
-.Product__details {
-  margin: 0.75em 1em 10em;
+.Product__detail__wrapper {
+  display: flex;
+  margin: 0 2em 10em;
+  @media screen and (min-width: 300px) {
+    margin: 0 2em 12em;
+    flex-direction: column;
+  }
+  @media screen and (min-width: 600px) {
+    margin: 0 4em 12em;
+    flex-direction: row;
+  }
+  @media screen and (min-width: 900px) {
+    margin: 0 6em 20em;
+    flex-direction: row;
+  }
+}
+
+.Product__detail__inner__wrapper {
+  width: 100%;
+  @media screen and (min-width: 300px) {
+  }
+  @media screen and (min-width: 600px) {
+    padding: 1em 0.5em;
+  }
+  @media screen and (min-width: 900px) {
+  }
 }
 
 .Product__detail__price {

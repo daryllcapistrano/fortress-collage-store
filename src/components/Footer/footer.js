@@ -4,7 +4,7 @@ import Instagram from "../../assets/instagram.svg";
 import Mail from "../../assets/mail.svg";
 
 const Footer = () => (
-  <div className="Footer">
+  <footer className="Footer">
     <ul className="Social__buttons">
       <li>
         <a
@@ -29,7 +29,7 @@ const Footer = () => (
           integrate <a href="https://www.gatsbyjs.org/">Gatsby</a>,{" "}
           <a href="https://snipcart.com/">Snipcart</a> and{" "}
           <a href="https://www.datocms.com">DatoCMS</a>. */}
-  </div>
+  </footer>
 );
 
 export default Footer;
