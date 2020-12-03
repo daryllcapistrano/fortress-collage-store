@@ -51,11 +51,16 @@ export default (props) => (
       const productSizes = Object.getOwnPropertyNames(productMetaData.size);
       console.log(productSizes);
 
-      // const sizes = props.pageContext.productmetadata;
+      // get values for cart summary sizes
+      const sizeOptions = productSizes.join("|");
+      console.log(sizeOptions);
 
-      // returns only board widths, breaks on tshirt sizes
-      // const width = Object.getOwnPropertyNames(productMetaData.width);
-      // console.log(width);
+      // update item before adding to cart
+      // const select = document.querySelector("#product_size");
+      // select.addEventListener("change", () => {
+      //   // Sets the default size when adding the item
+      //   span.setAttribute("data-item-custom1-value", select.value);
+      // });
 
       return (
         <Layout site={data.site}>
@@ -92,12 +97,18 @@ export default (props) => (
             {/* <h1>{props.pageContext.productmetadata.type}</h1> */}
             {/* <p>{singleProduct[0].node.id}</p> */}
             <div style={{ marginBottom: `1.25em` }}>
-              <select>
+              <select
+                id="product_size"
+                // value={this.state.selectValue}
+                // onChange={this.handleChange}
+              >
                 {/* <option value={productSizes[0]}>{productSizes[0]}</option>
                 <option value={productSizes[1]}>{productSizes[1]}</option> */}
 
-                {productSizes.map((size) => (
-                  <option value={size}>{size}</option>
+                {productSizes.map((size, index) => (
+                  <option key={index} value={size}>
+                    {size}
+                  </option>
                 ))}
               </select>
             </div>
@@ -109,6 +120,8 @@ export default (props) => (
               data-item-image={singleProduct[0].node.image.url}
               data-item-name={props.pageContext.name}
               data-item-url={`/`}
+              data-item-custom1-name="size"
+              data-item-custom1-options={sizeOptions}
             >
               add to cart
             </span>

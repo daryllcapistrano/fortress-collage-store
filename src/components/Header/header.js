@@ -15,6 +15,16 @@ const Header = ({ site }) => (
         </Link>
       </h1>
     </div>
+    {/* <div
+      style={{
+        textAlign: `center`,
+        textTransform: `uppercase`,
+        fontWeight: `bold`,
+        marginTop: `1em`,
+      }}
+    >
+      fortress collage
+    </div> */}
     <div>
       <button className="Header__cart snipcart-checkout snipcart-summary">
         <a href="/" className="Header__cart__link">
