@@ -78,7 +78,7 @@ export default (props) => (
               {" "}
               &#60; home
             </Link>
-            <h2 className="Product__detail__name">{props.pageContext.name}</h2>
+            <h1 className="Product__detail__name">{props.pageContext.name}</h1>
             <Img
               className="Product__detail__image"
               fluid={singleProduct[0].node.image.fluid}

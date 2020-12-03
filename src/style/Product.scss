@@ -123,14 +123,19 @@
   // font-weight: bold;
   margin: 1em 0 0.25em;
   padding-left: 0.25em;
+  padding-top: 1em;
+  border-top: 1px solid lightgray;
 }
 
 .Product__detail__name {
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 4px;
   font-weight: bold;
-  font-size: 150%;
-  margin: 1em 0 0.1em;
+  font-size: 250%;
+  margin: 1em 0 0.25em;
+  padding-bottom: 0.25em;
+  border-bottom: 1px solid lightgray;
   // margin: 0 0 0.25em;
 }
 
