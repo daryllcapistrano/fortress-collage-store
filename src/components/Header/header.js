@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "gatsby-link";
+import BurgerMenu from "./Menu/menu";
 import Logo from "../Logo/logo";
 
 import Cart from "../../assets/cart.svg";
 
 const Header = ({ site }) => (
   <header className="Header">
+    <BurgerMenu />
     <div>
       <h1 className="Header__logo" data-text={site.siteMetadata.siteName}>
         <Link to="/">
