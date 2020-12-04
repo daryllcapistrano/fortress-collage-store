@@ -9,8 +9,7 @@
 }
 
 .Header__logo {
-  // margin: auto;
-  margin-left: 1.25em;
+  margin: auto;
   width: 12%;
   @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
     width: 18%;
@@ -22,18 +21,15 @@
   top: 50%;
   right: 15px;
   margin-top: -12px;
-  // margin-left: 1.25em;
   cursor: pointer;
   background-color: transparent;
   border: none;
-  &:hover {
-    // background-color: lightgray;
-  }
+  // &:hover {
+  //   background-color: lightgray;
+  // }
 }
 
 .Header__cart__link {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   text-decoration: none;
 }
 
@@ -49,27 +45,3 @@
   right: -1px;
   font-weight: bold;
 }
-
-// .Header__summary__line {
-//   font-size: 0.8em;
-// }
-
-// .Header__summary__cart {
-//   font-size: 0.8em;
-//   font-weight: bold;
-//   color: black;
-//   border-radius: 3px;
-//   text-decoration: none;
-//   float: right;
-//   margin: 0 1em 0 0;
-//   padding: 0.25em 0.75em;
-//   // border: 1px solid black;
-//   @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-//     margin: 0 1.5em 0 0;
-//   }
-// }
-
-// .Header__summary__logo {
-//   position: relative;
-//   bottom: -2px;
-// }
