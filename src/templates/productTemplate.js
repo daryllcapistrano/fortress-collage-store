@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql, Link } from "gatsby";
+import { StaticQuery, graphql } from "gatsby";
 import Layout from "../components/Layout/index";
 import Img from "gatsby-image";
 // import Image from "../components/Images/productImage";
@@ -64,21 +64,6 @@ export default (props) => (
 
       return (
         <Layout site={data.site}>
-          <div>
-            <Link
-              to={`/`}
-              style={{
-                display: `inline-block`,
-                textDecoration: `none`,
-                fontSize: `50%`,
-                color: `black`,
-                margin: `1.5em`,
-              }}
-            >
-              {" "}
-              &#60; home
-            </Link>
-          </div>
           <div className="Product__detail__wrapper" key={singleProduct[0].id}>
             <div className="Product__detail__inner__wrapper">
               <h1 className="Product__detail__name">
@@ -94,10 +79,8 @@ export default (props) => (
                 ${props.pageContext.price}
               </p>
               <p className="Product__detail__description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Eligendi ratione corporis, minus ex officiis molestias, suscipit
-                deserunt dolore maiores, culpa consequatur architecto error quo.
-                Distinctio.
+                8.125" / 14.25" Wheel Base / Mellow Concave / OG Shape 7 Ply
+                North American Hard Rock Maple Includes 1 sheet of black grip
               </p>
               {/* <p className="Product__detail__type">
               {props.pageContext.quantity}
