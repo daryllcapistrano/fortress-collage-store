@@ -21,7 +21,7 @@ const Header = ({ site }) => (
           <div className="Header__cart__icon">
             <Cart />
           </div>
-          <div className="Header__cart__total snipcart-total-items"></div>
+          {/* <div className="Header__cart__total snipcart-total-items"></div> */}
         </a>
       </button>
     </div>

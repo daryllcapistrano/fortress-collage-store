@@ -63,31 +63,30 @@ export default (props) => (
       // });
 
       return (
-        <Layout site={data.site}>
-          <div className="Product__detail__wrapper" key={singleProduct[0].id}>
+        <Layout site={data.site} key={singleProduct[0].id}>
+          <div className="Product__gallery__wrapper">
+            <Img
+              className="Product__gallery__image"
+              fluid={singleProduct[0].node.image.fluid}
+            />
+          </div>
+          <div className="Product__vendor">
+            <h1>fortress collage</h1>
+          </div>
+          <div className="Product__detail__wrapper">
             <div className="Product__detail__inner__wrapper">
-              <h1 className="Product__detail__name">
+              <h2 className="Product__detail__name">
                 {props.pageContext.name}
-              </h1>
-              <Img
-                className="Product__detail__image"
-                fluid={singleProduct[0].node.image.fluid}
-              />
-            </div>
-            <div className="Product__detail__inner__wrapper">
-              <p className="Product__detail__price">
+              </h2>
+              <h3 className="Product__detail__price">
                 ${props.pageContext.price}
-              </p>
+              </h3>
               <p className="Product__detail__description">
                 8.125" / 14.25" Wheel Base / Mellow Concave / OG Shape 7 Ply
                 North American Hard Rock Maple Includes 1 sheet of black grip
               </p>
-              {/* <p className="Product__detail__type">
-              {props.pageContext.quantity}
-            </p> */}
-              {/* <p>{props.pageContext.id}</p> */}
-              {/* <h1>{props.pageContext.productmetadata.type}</h1> */}
-              {/* <p>{singleProduct[0].node.id}</p> */}
+            </div>
+            <div className="Product__detail__inner__wrapper">
               <div style={{ marginBottom: `1.25em` }}>
                 <select
                   id="product_size"

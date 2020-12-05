@@ -117,7 +117,7 @@
   display: flex;
   margin: 2em 2em 10em;
   @media screen and (min-width: 300px) {
-    margin: 1em 2em 12em;
+    margin: 0.25em 2em 12em;
     flex-direction: column;
   }
   @media screen and (min-width: 600px) {
@@ -148,8 +148,6 @@
   font-size: 125%;
   margin: 1em 0 0.25em;
   padding-left: 0.25em;
-  padding-top: 1em;
-  border-top: 1px solid lightgray;
 }
 
 .Product__detail__name {
@@ -163,12 +161,30 @@
   // margin: 0 0 0.25em;
 }
 
-.Product__detail__image {
-  margin: 1em 0 0;
-  width: 100%;
-}
-
 .Product__detail__description {
   margin-bottom: 3em;
   padding: 0.3em;
+}
+
+// refactor styles
+
+.Product__vendor {
+  font-family: monospace;
+  color: lightgray;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.75em 0 0;
+}
+
+.Product__gallery__wrapper {
+  padding: 0.8em 0;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    inset 0 -15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.Product__gallery__image {
+  // margin: 1em 0 0;
+  width: 100%;
 }
