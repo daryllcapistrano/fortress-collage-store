@@ -2,6 +2,8 @@
   * {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    // background: black;
+    color: lightgrey;
   }
 
   .snip-product__name {
@@ -28,5 +30,9 @@
   }
   .snip-quantity-trigger__btn {
     background-color: transparent;
+  }
+
+  .snip-footer {
+    background: lightgrey;
   }
 }

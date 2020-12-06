@@ -175,10 +175,10 @@
 }
 
 .Product__gallery__wrapper {
-  padding: 0.8em 0;
+  padding: 0 0 0.8em;
   border-bottom: 1px solid lightgray;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    inset 0 -15px 40px rgba(166, 173, 201, 0.2);
+  // box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+  //   inset 0 -15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .Product__gallery__image {

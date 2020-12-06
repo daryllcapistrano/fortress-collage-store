@@ -3,41 +3,26 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-  height: 5em;
+  height: 100px;
   background: white;
   color: #32325d;
   border-bottom: 1px solid lightgray;
-  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
-    0 15px 40px rgba(166, 173, 201, 0.2);
+  // box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+  //   0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .Header__logo {
   margin: auto;
-  // width: 18%;
-  padding: 0.3em 0;
-  @media screen and (min-width: 300px) {
-    width: 16%;
-    padding: 0.3em 0;
-  }
-  @media screen and (min-width: 600px) {
-    width: 8%;
-    padding: 0.3em 0;
-  }
-  @media screen and (min-width: 900px) {
-    width: 8%;
-    padding: 0.3em 0;
-  }
-  @media screen and (min-width: 1024px) {
-    width: 4%;
-    padding: 0.3em 0;
-  }
+  height: 100%;
+  width: 5em;
+  padding: 0.5em 0;
 }
 
 .Header__cart {
   position: absolute;
-  top: 50%;
-  right: 15px;
-  margin-top: -18px;
+  margin: 2.25em 0;
+  left: 5em;
+  // padding: 0;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -51,14 +36,16 @@
 }
 
 .Header__cart__icon {
-  color: black;
-  font-size: 20px;
+  fill: lightgrey;
+  width: 24px;
+  height: 20px;
+  padding-top: 0.25em;
 }
 
 .Header__cart__total {
   position: relative;
-  color: black;
-  top: -40px;
-  right: -1px;
+  color: lightcoral;
+  top: -45px;
+  // right: -1px;
   font-weight: bold;
 }
