@@ -17,11 +17,9 @@ import Footer from "../Footer";
 const Layout = ({ children, site }) => (
   <div>
     <Helmet title="Fortress Skate Company" />
-    <div className="Container">
-      <Header site={site} />
-      {children}
-      <Footer />
-    </div>
+    <Header site={site} />
+    <div className="Container">{children}</div>
+    <Footer />
   </div>
 );
 

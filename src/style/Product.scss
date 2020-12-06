@@ -144,26 +144,23 @@
 .Product__detail__price {
   color: #594157;
   opacity: 0.6;
-  font-weight: bold;
-  font-size: 125%;
-  margin: 1em 0 0.25em;
-  padding-left: 0.25em;
+  text-align: center;
+  margin: 0.25em;
+  padding-bottom: 1.25em;
+  border-bottom: 1px solid lightgray;
 }
 
 .Product__detail__name {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-weight: bold;
+  margin: 0.5em 0 0;
   font-size: 250%;
-  padding-bottom: 0.25em;
-  border-bottom: 1px solid lightgray;
-  // margin: 0 0 0.25em;
 }
 
 .Product__detail__description {
-  margin-bottom: 3em;
-  padding: 0.3em;
+  margin: 0.75em 0;
+  padding: 0.5em;
 }
 
 // refactor styles
@@ -171,10 +168,10 @@
 .Product__vendor {
   font-family: monospace;
   color: lightgray;
-  font-weight: bold;
+  // font-weight: bold;
   text-align: center;
   text-transform: uppercase;
-  padding: 0.75em 0 0;
+  // padding: 0.75em 0 0;
 }
 
 .Product__gallery__wrapper {

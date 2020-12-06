@@ -1,8 +1,9 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
+import MenuIcon from "../../../assets/menu.svg";
 
 const BurgerMenu = () => (
-  <Menu>
+  <Menu customBurgerIcon={<MenuIcon />}>
     <a id="home" className="Menu__item" href="/">
       Home
     </a>

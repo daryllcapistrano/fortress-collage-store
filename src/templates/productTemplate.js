@@ -70,9 +70,6 @@ export default (props) => (
               fluid={singleProduct[0].node.image.fluid}
             />
           </div>
-          <div className="Product__vendor">
-            <h1>fortress collage</h1>
-          </div>
           <div className="Product__detail__wrapper">
             <div className="Product__detail__inner__wrapper">
               <h2 className="Product__detail__name">
@@ -82,8 +79,15 @@ export default (props) => (
                 ${props.pageContext.price}
               </h3>
               <p className="Product__detail__description">
-                8.125" / 14.25" Wheel Base / Mellow Concave / OG Shape 7 Ply
-                North American Hard Rock Maple Includes 1 sheet of black grip
+                <ul>
+                  <li>8.125"</li> <br /> <li>14.25" Wheel Base</li> <br />{" "}
+                  <li>Mellow Concave </li>
+                  <br />{" "}
+                  <li>
+                    OG Shape 7 Ply North American Hard Rock Maple Includes 1
+                    sheet of black grip
+                  </li>
+                </ul>
               </p>
             </div>
             <div className="Product__detail__inner__wrapper">
