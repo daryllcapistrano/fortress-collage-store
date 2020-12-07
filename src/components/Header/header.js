@@ -7,7 +7,7 @@ import CartIcon from "../../assets/bag.svg";
 
 const Header = ({ site }) => (
   <header className="Header">
-    <div>
+    <div className="Header__actions">
       <BurgerMenu />
       <button className="Header__cart snipcart-checkout snipcart-summary">
         <a href="/" className="Header__cart__link">
