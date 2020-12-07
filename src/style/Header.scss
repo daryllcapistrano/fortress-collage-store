@@ -11,6 +11,10 @@
   //   0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
+.Header__actions {
+  height: auto;
+}
+
 .Header__logo {
   margin: auto;
   height: 100%;
@@ -37,8 +41,8 @@
 
 .Header__cart__icon {
   fill: lightgrey;
+  height: auto;
   width: 24px;
-  height: 20px;
   padding-top: 0.25em;
 }
 
