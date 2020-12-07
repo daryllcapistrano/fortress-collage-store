@@ -148,6 +148,7 @@
   text-align: center;
   padding: 0.75em 0;
   font-size: 125%;
+  width: 100%;
   // margin: 0.25em;
   // padding-bottom: 1.25em;
 }
@@ -163,14 +164,13 @@
 
 .Product__detail__description {
   padding: 2em 1em;
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
+  // border-top: 1px solid lightgray;
+  // border-bottom: 1px solid lightgray;
 }
 
 // refactor styles
 
 .Product__vendor {
-  font-family: monospace;
   color: lightgray;
   // font-weight: bold;
   text-align: center;
@@ -190,3 +190,7 @@
   // margin: 1em 0 0;
   width: 100%;
 }
+
+// .Product__size__dropdown {
+//   width: 66%;
+// }

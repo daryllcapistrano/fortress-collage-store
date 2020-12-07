@@ -79,19 +79,14 @@ export default (props) => (
           </div>
           <div className="Product__detail__wrapper">
             <div className="Product__detail__inner__wrapper">
-              {/* <h2 className="Product__detail__name">
-                {props.pageContext.name}
-              </h2> */}
-              <h3 className="Product__detail__price">
-                ${props.pageContext.price}
-              </h3>
               <p className="Product__detail__description">
                 {props.pageContext.description}
               </p>
             </div>
             <div className="Product__detail__inner__wrapper">
-              <div style={{ marginBottom: `1.25em` }}>
+              <div style={{ marginBottom: `1em`, display: `flex` }}>
                 <select
+                  className="Product__size__dropdown"
                   id="product_size"
                   // value={this.state.selectValue}
                   // onChange={this.handleChange}
@@ -105,6 +100,9 @@ export default (props) => (
                     </option>
                   ))}
                 </select>
+                <div className="Product__detail__price">
+                  ${props.pageContext.price}
+                </div>
               </div>
               <span
                 className="Product__buy snipcart-add-item"

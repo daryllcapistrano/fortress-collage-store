@@ -48,5 +48,13 @@ module.exports = {
         failOnError: true,
       },
     },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        google: {
+          families: ["Anonymous Pro:400,700"],
+        },
+      },
+    },
   ],
 };

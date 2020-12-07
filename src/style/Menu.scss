@@ -1,7 +1,7 @@
 .bm-burger-button {
   position: absolute;
-  width: 24px;
-  height: 20px;
+  width: 30px;
+  height: 28px;
   margin: 2.25em 1.5em;
   // left: 2rem;
   // top: 30%;
@@ -11,6 +11,7 @@
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: lightgrey;
+  color: black;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -54,7 +55,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 /* Wrapper for item list */
 .bm-item-list {
   // color: #b8b7ad;
-  padding: 0.8em;
+  padding: 2em;
 }
 
 /* Individual item */

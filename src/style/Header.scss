@@ -6,7 +6,7 @@
   height: 100px;
   background: white;
   color: #32325d;
-  border-bottom: 1px solid lightgray;
+  // border-bottom: 1px solid lightgray;
   // box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
   //   0 15px 40px rgba(166, 173, 201, 0.2);
 }
@@ -44,8 +44,9 @@
 
 .Header__cart__total {
   position: relative;
-  color: lightcoral;
-  top: -45px;
+  color: red;
+  top: -20px;
+  left: 1px;
   // right: -1px;
   font-weight: bold;
 }
