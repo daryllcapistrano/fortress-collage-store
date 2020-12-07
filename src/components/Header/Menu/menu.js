@@ -1,7 +1,9 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 // import MenuIcon from "../../../assets/menu.svg";
+// import LeftChevron from "../../../assets/chevron-svgrepo-com.svg";
 // customBurgerIcon={<MenuIcon />}
+// customCrossIcon={<LeftChevron />}
 const BurgerMenu = () => (
   <Menu>
     <a id="home" className="Menu__item" href="/">

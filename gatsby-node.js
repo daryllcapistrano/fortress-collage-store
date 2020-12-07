@@ -20,6 +20,7 @@ exports.createPages = async ({ graphql, actions }) => {
             price
             productmetadata
             quantity
+            description
           }
         }
       }
@@ -36,6 +37,7 @@ exports.createPages = async ({ graphql, actions }) => {
         name: edge.node.name,
         price: edge.node.price,
         quantity: edge.node.quantity,
+        description: edge.node.description,
         productmetadata: edge.node.productmetadata,
         // Add optional context data to be inserted
         // as props into the page component..

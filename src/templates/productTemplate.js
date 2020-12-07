@@ -1,5 +1,5 @@
 import React from "react";
-import { StaticQuery, graphql } from "gatsby";
+import { StaticQuery, graphql, Link } from "gatsby";
 import Layout from "../components/Layout/index";
 import Img from "gatsby-image";
 // import Image from "../components/Images/productImage";
@@ -23,6 +23,7 @@ export default (props) => (
               name
               price
               quantity
+              description
               productmetadata
               image {
                 url
@@ -64,6 +65,12 @@ export default (props) => (
 
       return (
         <Layout site={data.site} key={singleProduct[0].id}>
+          <div className="Breadcrumbs">
+            <Link to="/">home</Link> / collections / shoes / boards
+          </div>
+          <div className="Product__header">
+            <h1 className="Product__detail__name">{props.pageContext.name}</h1>
+          </div>
           <div className="Product__gallery__wrapper">
             <Img
               className="Product__gallery__image"
@@ -72,22 +79,14 @@ export default (props) => (
           </div>
           <div className="Product__detail__wrapper">
             <div className="Product__detail__inner__wrapper">
-              <h2 className="Product__detail__name">
+              {/* <h2 className="Product__detail__name">
                 {props.pageContext.name}
-              </h2>
+              </h2> */}
               <h3 className="Product__detail__price">
                 ${props.pageContext.price}
               </h3>
               <p className="Product__detail__description">
-                <ul>
-                  <li>8.125"</li> <br /> <li>14.25" Wheel Base</li> <br />{" "}
-                  <li>Mellow Concave </li>
-                  <br />{" "}
-                  <li>
-                    OG Shape 7 Ply North American Hard Rock Maple Includes 1
-                    sheet of black grip
-                  </li>
-                </ul>
+                {props.pageContext.description}
               </p>
             </div>
             <div className="Product__detail__inner__wrapper">

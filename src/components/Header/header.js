@@ -16,11 +16,11 @@ const Header = ({ site }) => (
         </div>
       </a>
     </button>
-    <h1 className="Header__logo" data-text={site.siteMetadata.siteName}>
+    <div className="Header__logo" data-text={site.siteMetadata.siteName}>
       <Link to="/">
         <Logo />
       </Link>
-    </h1>
+    </div>
   </header>
 );
 

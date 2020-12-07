@@ -34,6 +34,9 @@ export default () => (
     render={(data) => (
       <Layout site={data.site}>
         <div className="Catalogue">
+          <div className="Catalogue__date">
+            <h1>winter 20 catalogue</h1>
+          </div>
           {data.products.edges.map(({ node: product }) => (
             <div className="Catalogue__item" key={product.id}>
               <div className="Product">
@@ -43,13 +46,13 @@ export default () => (
                   </a>
                 </div>
                 <div className="Product__name">
-                  {product.name}
+                  <h2>{product.name}</h2>
                   {/* <div className="Product__type"></div> */}
-                  <span className="Product__price">
-                    $ {product.price}
-                    {/* <div className="Product__type"></div> */}
-                  </span>
                 </div>
+                <span className="Product__price">
+                  ${product.price}
+                  {/* <div className="Product__type"></div> */}
+                </span>
               </div>
             </div>
           ))}
