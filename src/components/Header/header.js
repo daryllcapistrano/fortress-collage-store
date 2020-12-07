@@ -3,7 +3,7 @@ import Link from "gatsby-link";
 import BurgerMenu from "./Menu/menu";
 import Logo from "../Logo/logo";
 
-import CartIcon from "../../assets/bag.svg";
+import CartIcon from "../../assets/shopping-bag.svg";
 
 const Header = ({ site }) => (
   <header className="Header">

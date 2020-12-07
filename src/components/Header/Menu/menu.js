@@ -7,6 +7,9 @@ import Logo from "../../Logo/logo";
 // customCrossIcon={<LeftChevron />}
 const BurgerMenu = () => (
   <Menu customBurgerIcon={<MenuIcon />}>
+    <div className="Menu__logo">
+      <Logo />
+    </div>
     <a id="home" href="/">
       Home <span>&#8594;</span>
     </a>
@@ -25,9 +28,6 @@ const BurgerMenu = () => (
     {/* <a onClick={this.showSettings} className="menu-item--small" href="">
       Settings
     </a> */}
-    <div>
-      <Logo />
-    </div>
   </Menu>
 );
 

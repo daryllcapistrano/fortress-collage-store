@@ -18,9 +18,8 @@
 
 .Header__cart {
   position: absolute;
-  margin: 2.25em 0;
-  left: 5em;
-  // padding: 0;
+  top: 33%;
+  left: 5.5em;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -34,17 +33,17 @@
 }
 
 .Header__cart__icon {
-  fill: lightgrey;
   height: auto;
-  width: 24px;
-  padding-top: 0.25em;
+
+  // width: 24px;
+  // padding-top: 0.25em;
 }
 
 .Header__cart__total {
   position: relative;
   color: red;
-  top: -20px;
-  left: 1px;
+  top: -45px;
+  // left: 1px;
   // right: -1px;
   font-weight: bold;
 }
