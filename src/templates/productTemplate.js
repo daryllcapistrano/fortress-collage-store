@@ -66,7 +66,7 @@ export default (props) => (
       return (
         <Layout site={data.site} key={singleProduct[0].id}>
           <div className="Breadcrumbs">
-            <Link to="/">home</Link> / collections / shoes / boards
+            <Link to="/">home</Link> / collections / apparel / boards
           </div>
           <div className="Product__header">
             <h1 className="Product__detail__name">{props.pageContext.name}</h1>

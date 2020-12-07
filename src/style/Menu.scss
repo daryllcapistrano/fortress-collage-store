@@ -60,14 +60,29 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Individual item */
 .bm-item {
-  font-size: 0.75em;
   color: white;
   text-decoration: none;
-  height: 2em;
-  border-bottom: 1px solid #ddd;
+  letter-spacing: 2px;
+  height: auto;
+  padding: 1.15em;
+  border: 1px solid #ddd;
   border-color: rgba(255, 255, 255, 0.25);
-
-  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+  transition: all 150ms ease-in-out;
+  span {
+    float: right;
+    transform: translateX(-12px);
+    transition: transform 400ms ease-in-out;
+  }
+  &:hover {
+    color: yellow;
+    transition: all 150ms ease-in-out;
+    span {
+      transform: translateX(0px);
+      opacity: 1;
+      transition: transform 150ms ease-in-out;
+    }
+  }
 }
 
 /* Styling of overlay */
