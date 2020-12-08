@@ -13,8 +13,8 @@ const BurgerMenu = () => (
     <a id="home" href="/">
       Home <span>&#8594;</span>
     </a>
-    <a id="new" href="/">
-      New <span>&#8594;</span>
+    <a id="landing" href="/landing">
+      Landing Page <span>&#8594;</span>
     </a>
     <a id="catalogue" href="/">
       Catalogue <span>&#8594;</span>
