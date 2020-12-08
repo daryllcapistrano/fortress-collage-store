@@ -34,12 +34,12 @@ const BurgerMenu = () => (
           target="_blank"
           rel="noreferrer"
         >
-          <Instagram />
+          <Instagram /> @instagram
         </a>
       </li>
       <li>
         <a href="mailto:fortresscollage@gmail.com">
-          <Mail />
+          <Mail /> @email
         </a>
       </li>
     </ul>

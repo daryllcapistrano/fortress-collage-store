@@ -106,23 +106,21 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .Menu__logo {
-  padding: 0 4em;
+  padding: 0 5em;
   display: block;
   border: none !important;
   margin: auto;
-  margin-bottom: 1em;
+  margin-top: 2.5em;
 }
 
 .Menu__social__buttons {
-  position: absolute;
-  display: inline-flex !important;
-  justify-content: space-evenly;
-  bottom: 0;
   border: none;
+  text-align: center;
   li {
     margin: 1em;
   }
   a {
     color: black;
+    text-decoration: none;
   }
 }
