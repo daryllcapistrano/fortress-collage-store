@@ -106,7 +106,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .Menu__logo {
-  padding: 0 2.5em;
+  padding: 0 4em;
   display: block;
   border: none !important;
   margin: auto;
@@ -114,9 +114,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .Menu__social__buttons {
-  display: flex !important ;
+  position: absolute;
+  display: inline-flex !important;
   justify-content: space-evenly;
+  bottom: 0;
   border: none;
+  li {
+    margin: 1em;
+  }
   a {
     color: black;
   }
