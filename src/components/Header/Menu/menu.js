@@ -8,7 +8,12 @@ import Mail from "../../../assets/mail.svg";
 // customBurgerIcon={<MenuIcon />}
 // customCrossIcon={<LeftChevron />}
 const BurgerMenu = () => (
-  <Menu customBurgerIcon={<MenuIcon />} width={"80%"} disableAutoFocus>
+  <Menu
+    customBurgerIcon={<MenuIcon />}
+    width={"80%"}
+    disableAutoFocus
+    noOverlay
+  >
     <a id="home" href="/">
       Home <span>&#8594;</span>
     </a>

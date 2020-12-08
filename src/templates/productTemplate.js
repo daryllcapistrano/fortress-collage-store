@@ -56,6 +56,11 @@ export default (props) => (
       const sizeOptions = productSizes.join("|");
       console.log(sizeOptions);
 
+      // get getvalue from select dropdown
+      // const selectedValue = document.getElementById("product_size");
+      // const newValue = selectedValue.value;
+      // console.log(newValue);
+
       // update item before adding to cart
       // const select = document.querySelector("#product_size");
       // select.addEventListener("change", () => {
@@ -85,15 +90,7 @@ export default (props) => (
             </div>
             <div className="Product__detail__inner__wrapper">
               <div style={{ marginBottom: `1em`, display: `flex` }}>
-                <select
-                  className="Product__size__dropdown"
-                  id="product_size"
-                  // value={this.state.selectValue}
-                  // onChange={this.handleChange}
-                >
-                  {/* <option value={productSizes[0]}>{productSizes[0]}</option>
-                <option value={productSizes[1]}>{productSizes[1]}</option> */}
-
+                <select id="Product__size" className="Product__size__dropdown">
                   {productSizes.map((size, index) => (
                     <option key={index} value={size}>
                       {size}
@@ -114,6 +111,7 @@ export default (props) => (
                 data-item-url={`/`}
                 data-item-custom1-name="size"
                 data-item-custom1-options={sizeOptions}
+                // data-item-custom1-value={selectedValue}
               >
                 add to cart
               </span>
