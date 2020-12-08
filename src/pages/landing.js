@@ -10,20 +10,7 @@ const Landing = () => (
           <Logo />
         </Link>
       </div>
-      <Link
-        to="/"
-        style={{
-          fontFamily: `Anonymous Pro`,
-          textDecoration: `none`,
-          textTransform: `uppercase`,
-          border: `1px solid black`,
-          borderRadius: `3px`,
-          color: `black`,
-          width: `100%`,
-          height: `auto`,
-          padding: `.5em 1em`,
-        }}
-      >
+      <Link to="/" className="Landing__action">
         enter
       </Link>
     </div>

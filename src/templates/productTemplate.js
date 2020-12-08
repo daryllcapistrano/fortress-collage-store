@@ -101,7 +101,7 @@ export default (props) => (
                   ))}
                 </select>
                 <div className="Product__detail__price">
-                  ${props.pageContext.price}
+                  <h2>${props.pageContext.price}</h2>
                 </div>
               </div>
               <span

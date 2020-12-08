@@ -36,13 +36,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
-  width: 100% !important;
 }
 
 /* General sidebar styles */
 .bm-menu {
   background: white;
-  padding: 4em 2em;
+  padding: 5em 0.5em;
 
   // font-size: 1em;
 }
@@ -107,10 +106,18 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 .Menu__logo {
-  padding: 0;
+  padding: 2.5em;
   display: block;
   border: none !important;
-  width: 66%;
   margin: auto;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
+}
+
+.Menu__social__buttons {
+  display: flex !important ;
+  justify-content: space-evenly;
+  border: none;
+  a {
+    color: black;
+  }
 }
