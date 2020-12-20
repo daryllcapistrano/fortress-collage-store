@@ -2,6 +2,7 @@ import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
 import Layout from "../components/Layout/index";
 import Img from "gatsby-image";
+import Dropdown from "../components/select";
 // import Image from "../components/Images/productImage";
 
 // * now that ive got the correct data to each page, reading the docs just reminded me that i should not use static query for page layer data.id
@@ -52,9 +53,15 @@ export default (props) => (
       const productSizes = Object.getOwnPropertyNames(productMetaData.size);
       console.log(productSizes);
 
+      const results = productSizes.map((size) => ({
+        value: size,
+        label: size.toUpperCase(),
+      }));
+
       // get values for cart summary sizes
       const sizeOptions = productSizes.join("|");
       console.log(sizeOptions);
+      console.log(results, "the results");
 
       // get getvalue from select dropdown
       // const selectedValue = document.getElementById("product_size");
@@ -90,17 +97,18 @@ export default (props) => (
             </div>
             <div className="Product__detail__inner__wrapper">
               <div style={{ marginBottom: `1em`, display: `flex` }}>
-                <select id="Product__size" className="Product__size__dropdown">
+                {/* <select id="Product__size" className="Product__size__dropdown">
                   {productSizes.map((size, index) => (
                     <option key={index} value={size}>
                       {size}
                     </option>
                   ))}
-                </select>
+                </select> */}
                 <div className="Product__detail__price">
                   <h2>${props.pageContext.price}</h2>
                 </div>
               </div>
+              <Dropdown options={results} />
               <span
                 className="Product__buy snipcart-add-item"
                 data-item-id={props.pageContext.id}
@@ -111,7 +119,7 @@ export default (props) => (
                 data-item-url={`/`}
                 data-item-custom1-name="size"
                 data-item-custom1-options={sizeOptions}
-                // data-item-custom1-value={selectedValue}
+                // data-item-custom1-value={}
               >
                 add to cart
               </span>

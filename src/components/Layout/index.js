@@ -15,10 +15,12 @@ import Footer from "../Footer";
 // import Logo from "../Logo/logo";
 
 const Layout = ({ children, site }) => (
-  <div>
+  <div id="outer-container">
     <Helmet title="Fortress Skate Company" />
     <Header site={site} />
-    <div className="Container">{children}</div>
+    <div className="Container" id="page-wrap">
+      {children}
+    </div>
     <Footer />
   </div>
 );

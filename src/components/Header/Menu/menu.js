@@ -1,5 +1,5 @@
 import React from "react";
-import { slide as Menu } from "react-burger-menu";
+import { push as Menu } from "react-burger-menu";
 import MenuIcon from "../../../assets/menu.svg";
 import Logo from "../../Logo/logo";
 import Instagram from "../../../assets/instagram.svg";
@@ -13,6 +13,8 @@ const BurgerMenu = () => (
     width={"80%"}
     disableAutoFocus
     noOverlay
+    pageWrapId={"page-wrap"}
+    outerContainerId={"outer-container"}
   >
     <a id="home" href="/">
       Home <span>&#8594;</span>
