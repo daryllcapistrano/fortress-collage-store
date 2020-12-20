@@ -41,7 +41,7 @@ export default () => (
             <div className="Catalogue__item" key={product.id}>
               <div className="Product">
                 <div className="Product__image">
-                  <a href={`${product.id}`}>
+                  <a href={`${product.name}`}>
                     <Img sizes={product.image.sizes} />
                   </a>
                 </div>

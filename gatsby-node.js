@@ -29,8 +29,8 @@ exports.createPages = async ({ graphql, actions }) => {
 
   allProducts.data.allDatoCmsProduct.edges.forEach((edge) => {
     createPage({
-      // Path for this page — required
-      path: `${edge.node.id}`,
+      // Path for this page — required - must be unique name
+      path: `${edge.node.name}`,
       component: productTemplate,
       context: {
         id: edge.node.id,
