@@ -1,19 +1,16 @@
 .Header {
   position: fixed;
-  top: 0;
-  left: 0;
   z-index: 1000;
   width: 100%;
-  height: 100px;
-  background: white;
-  color: #32325d;
+  top: 0;
+  left: 0;
+  background-color: white;
 }
 
 .Header__logo {
   margin: auto;
-  height: 100%;
-  width: 5em;
   padding: 0.5em 0;
+  width: 5em;
 }
 
 .Header__cart {
@@ -23,27 +20,15 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
-  // &:hover {
-  //   background-color: lightgray;
-  // }
 }
 
 .Header__cart__link {
-  text-decoration: none;
-}
-
-.Header__cart__icon {
-  height: auto;
-
-  // width: 24px;
-  // padding-top: 0.25em;
+  display: flex;
 }
 
 .Header__cart__total {
-  position: relative;
-  color: red;
-  top: -45px;
-  // left: 1px;
-  // right: -1px;
+  position: absolute;
+  margin: 0.7em;
+  color: rgba(0, 128, 0, 0.644);
   font-weight: bold;
 }

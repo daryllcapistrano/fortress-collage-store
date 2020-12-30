@@ -1,32 +1,28 @@
 .bm-burger-button {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 2rem;
-  // top: 30%;
-  // z-index: 1000;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  // background: lightgrey;
-  color: black;
+  color: #121212;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: #a90000;
+  background: #f2f2f2;
 }
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
-  height: 24px;
-  width: 24px;
   margin: 1em;
+  left: 0;
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: black;
+  background: #121212;
 }
 
 /*
@@ -42,8 +38,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background: white;
   padding: 5em 0.5em;
-
-  // font-size: 1em;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -53,22 +47,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  padding: 0 1em;
-  @media (min-width: 640px) {
-    padding: 0 2em;
-  }
-
-  @media (min-width: 768px) {
-    padding: 0 4em;
-  }
-
-  @media (min-width: 1024px) {
-    padding: 0 8em;
-  }
-
-  @media (min-width: 1280px) {
-    padding: 0 16em;
-  }
+  padding: 0;
 }
 
 /* Individual item */
@@ -105,27 +84,28 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.8);
 }
 
+/* My added styles */
+
 .Menu__logo {
-  padding: 0 5em;
+  padding: 1.5em 5em;
   display: block;
   border: none !important;
   margin: auto;
-  margin-top: 1.5em;
 }
 
 .Menu__social__buttons {
   border: none;
   text-align: left;
   white-space: break-spaces;
-
+  padding: 0;
+  margin: 0;
   li {
-    padding: 0 1em !important;
     margin: 0.75em 0;
   }
   a {
-    color: black;
-    text-decoration: none;
     display: flex;
     align-items: center;
+    color: #121212;
+    text-decoration: none;
   }
 }

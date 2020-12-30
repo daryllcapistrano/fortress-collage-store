@@ -1,18 +1,14 @@
 import React from "react";
-import { push as Menu } from "react-burger-menu";
-import MenuIcon from "../../../assets/menu.svg";
-import Logo from "../../Logo/logo";
-import Instagram from "../../../assets/instagram.svg";
-import Mail from "../../../assets/mail.svg";
-// import LeftChevron from "../../../assets/chevron-svgrepo-com.svg";
-// customBurgerIcon={<MenuIcon />}
-// customCrossIcon={<LeftChevron />}
-const BurgerMenu = () => (
-  <Menu
+import { push as Wrapper } from "react-burger-menu";
+import Logo from "../Logo";
+import MenuIcon from "../../assets/menu.svg";
+import Instagram from "../../assets/instagram.svg";
+import Mail from "../../assets/mail.svg";
+
+const Menu = () => (
+  <Wrapper
     customBurgerIcon={<MenuIcon />}
-    width={"80%"}
     disableAutoFocus
-    noOverlay
     pageWrapId={"page-wrap"}
     outerContainerId={"outer-container"}
   >
@@ -53,7 +49,7 @@ const BurgerMenu = () => (
     {/* <a onClick={this.showSettings} className="menu-item--small" href="">
       Settings
     </a> */}
-  </Menu>
+  </Wrapper>
 );
 
-export default BurgerMenu;
+export default Menu;

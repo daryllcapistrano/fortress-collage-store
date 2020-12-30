@@ -45,14 +45,12 @@ export default () => (
                     <Img sizes={product.image.sizes} />
                   </a>
                 </div>
-                <div className="Product__name">
+                {/* <div className="Product__name">
                   <h2>{product.name}</h2>
-                  {/* <div className="Product__type"></div> */}
                 </div>
                 <span className="Product__price">
                   ${product.price}
-                  {/* <div className="Product__type"></div> */}
-                </span>
+                </span> */}
               </div>
             </div>
           ))}
