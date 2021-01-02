@@ -14,21 +14,26 @@
 }
 
 .Header__cart {
+  // float: right;
+  // margin: 2.25em;
   position: absolute;
-  top: 33%;
-  left: 5.5em;
+  top: 36%;
+  left: 4rem;
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
 
 .Header__cart__link {
-  display: flex;
+  text-decoration: none;
+  display: inline-flex;
+  font-weight: bold;
+  color: #121212;
 }
 
 .Header__cart__total {
-  position: absolute;
-  margin: 0.7em;
+  // position: absolute;
+  // margin: 0.7em;
   color: rgba(0, 128, 0, 0.644);
   font-weight: bold;
 }
