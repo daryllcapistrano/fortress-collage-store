@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 // import Link from "gatsby-link";
 
-import "../../style/index.scss";
+import "../../sass/index.scss";
 
 import Header from "../Header";
 import Footer from "../Footer";
