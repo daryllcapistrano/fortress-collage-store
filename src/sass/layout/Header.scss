@@ -13,14 +13,14 @@ body {
 
 .Header__logo {
   margin: auto;
-  padding: 0.5em 0;
-  width: 5em;
+  padding: 0 0 0.5em;
+  width: 4em;
 }
 
 .Header__cart {
   position: absolute;
   top: 38%;
-  left: 5em;
+  right: 2em;
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -30,6 +30,7 @@ body {
   text-decoration: none;
   display: inline-flex;
   font-weight: bold;
+  font-size: 80%;
   color: #121212;
 }
 
