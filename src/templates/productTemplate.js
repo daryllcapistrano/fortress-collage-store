@@ -78,16 +78,20 @@ export default (props) => (
       return (
         <Layout site={data.site} key={singleProduct[0].id}>
           <div className="Breadcrumbs">
-            <Link to="/">home</Link> / collections / apparel / boards
+            <Link to="/">home</Link> / <Link to="/">collections</Link> /{" "}
+            <Link to="/">apparel</Link> / <Link to="/">boards</Link>
           </div>
-          <div className="Product__header">
+          {/* <div className="Product__header">
             <h1 className="Product__detail__name">{props.pageContext.name}</h1>
-          </div>
+          </div> */}
           <div className="Product__gallery__wrapper">
             <Img
               className="Product__gallery__image"
               fluid={singleProduct[0].node.image.fluid}
             />
+          </div>
+          <div className="Product__header">
+            <h1 className="Product__detail__name">{props.pageContext.name}</h1>
           </div>
           <div className="Product__detail__wrapper">
             <div className="Product__detail__inner__wrapper">
@@ -96,33 +100,27 @@ export default (props) => (
               </p>
             </div>
             <div className="Product__detail__inner__wrapper">
-              <div style={{ marginBottom: `1em`, display: `flex` }}>
-                {/* <select id="Product__size" className="Product__size__dropdown">
-                  {productSizes.map((size, index) => (
-                    <option key={index} value={size}>
-                      {size}
-                    </option>
-                  ))}
-                </select> */}
-                <div className="Product__detail__price">
-                  <h2>${props.pageContext.price}</h2>
-                </div>
+              <div className="Product__detail__price">
+                <h2>${props.pageContext.price}</h2>
               </div>
-              <Dropdown options={results} />
-              <span
-                className="Product__buy snipcart-add-item"
-                data-item-id={props.pageContext.id}
-                data-item-price={props.pageContext.price}
-                // clean up below for production, pass down data from pageContext
-                data-item-image={singleProduct[0].node.image.url}
-                data-item-name={props.pageContext.name}
-                data-item-url={`/`}
-                data-item-custom1-name="size"
-                data-item-custom1-options={sizeOptions}
-                // data-item-custom1-value={}
-              >
-                add to cart
-              </span>
+
+              <div style={{ padding: `0 1em 2.5em` }}>
+                <Dropdown options={results} />
+                <span
+                  className="Product__buy snipcart-add-item"
+                  data-item-id={props.pageContext.id}
+                  data-item-price={props.pageContext.price}
+                  // clean up below for production, pass down data from pageContext
+                  data-item-image={singleProduct[0].node.image.url}
+                  data-item-name={props.pageContext.name}
+                  data-item-url={`/`}
+                  data-item-custom1-name="size"
+                  data-item-custom1-options={sizeOptions}
+                  // data-item-custom1-value={}
+                >
+                  add to cart
+                </span>
+              </div>
             </div>
           </div>
         </Layout>

@@ -1,7 +1,7 @@
 .Breadcrumbs {
-  margin-top: 1em;
+  margin: 2em;
   text-align: center;
-  font-size: 75%;
+  font-size: 80%;
 }
 
 .Product {
@@ -117,7 +117,7 @@
 }
 
 .Product__detail__inner__wrapper {
-  width: 100%;
+  background-color: $carolina-blue;
   @media screen and (min-width: 300px) {
   }
   @media screen and (min-width: 600px) {
@@ -131,8 +131,7 @@
   color: #594157;
   opacity: 0.6;
   text-align: center;
-  padding: 0.25em 0 0;
-  width: 100%;
+  margin: 1em;
 }
 
 .Product__detail__name {
@@ -145,9 +144,8 @@
 }
 
 .Product__detail__description {
+  background-color: $red-orange-color-wheel;
   padding: 2em 1em;
-  // border-top: 1px solid lightgray;
-  // border-bottom: 1px solid lightgray;
 }
 
 // refactor styles

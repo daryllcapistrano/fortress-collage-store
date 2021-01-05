@@ -1,14 +1,10 @@
-body {
-  background-color: $carolina-blue;
-}
-
 .Header {
   position: fixed;
   z-index: 1000;
   width: 100%;
   top: 0;
   left: 0;
-  background-color: $magic-mint;
+  background-color: $jonquil;
 }
 
 .Header__logo {
@@ -35,8 +31,6 @@ body {
 }
 
 .Header__cart__total {
-  // position: absolute;
-  // margin: 0.7em;
   color: $oxford-blue;
   font-weight: bold;
 }

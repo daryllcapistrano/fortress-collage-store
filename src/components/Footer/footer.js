@@ -5,7 +5,7 @@ import Mail from "../../assets/mail.svg";
 
 const Footer = () => (
   <footer className="Footer">
-    <ul className="Social__buttons">
+    {/* <ul className="Social__buttons">
       <li>
         <a
           href="https://instagram.com/fortress_collage/"
@@ -20,7 +20,7 @@ const Footer = () => (
           <Mail />
         </a>
       </li>
-    </ul>
+    </ul> */}
     <div className="Footer__copyright">
       <p>&#169; 2020 Fortress Collage</p>
     </div>

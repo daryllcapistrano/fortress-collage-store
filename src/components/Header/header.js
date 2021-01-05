@@ -9,7 +9,11 @@ const Header = ({ site }) => (
   <header className="Header">
     <button className="Header__cart snipcart-checkout snipcart-summary">
       <a href="/" className="Header__cart__link">
-        CART (<div className="Header__cart__total snipcart-total-items"></div>)
+        CART
+        <div className="Header__cart__total">
+          {" "}
+          <div className="snipcart-total-items"></div>
+        </div>
       </a>
     </button>
     <Menu />
